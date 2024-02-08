@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <div id="content">
+    <div id="intro">
+      <h1>Learn to code by</h1>
+      <h1 id="h1-space">watching others</h1>
+      <p style="margin-top:5%">see how experienced developers solve problems in real-time.</p>
+      <p>Watching scripted tutorials is great, but understandig how </p>
+      <p>developers think is unvaluable.</p>
+
+    </div>
+    <div id="inscription">
+      <div id="promo">
+        <p><span style="font-weight: bold;">Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <div id="formulaire">
+        <form action="app.js" method="post" onsubmit="return validateForm()">
+          <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+          
+          <input type="text" id="lastname" name="lastname" placeholder="Last name" required><br><br>
+          
+          <input type="email" id="email" name="email" placeholder="E-mail Adress" required><br><br>
+          
+          <input type="password" id="password" name="password" placeholder="password" required><br><br>
+          
+          <input id="button" type="submit" value="CLAIM YOUR FREE TRAIL">
+          
+      </form>
+      
+
+      <p style="color:hsl(246, 25%, 77%);">By clicking the button, you are agreeing to our <span style="color: hsl(0, 100%, 74%);">Terms and Services</span></p>
+      </div>
+    </div>
+
+  </div>
+<script src="app.js"></script>
+</body>
+</html>
